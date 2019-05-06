@@ -127,8 +127,8 @@ function getUserInput() {
           : selector,
         []
       ).then(result => {
-        //var outputArray = result.filter(item => Object.keys(item).length);
-        console.log(JSON.stringify(result, null, 2)); // flatten it here
+        var outputArray = result.filter(item => Object.keys(item).length);
+        console.log(JSON.stringify(outputArray, null, 2)); // flatten it here
         getUserInput();
       });
     }
